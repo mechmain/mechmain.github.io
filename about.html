@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<head>
+<title>Mechmain - About</title>
+<link rel="icon" href="logosmall.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+@media only screen and (max-width: 600px) {
+.logo {
+width: 100%;
+}
+}
+
+.hours {
+  font-family: "Trirong", serif;
+}
+
+.about {
+    font-family: 'ABeeZee';font-size: 22px;
+}
+
+button, button::after {
+  width: 320px;
+  height: 86px;
+  font-size: 36px;
+  font-family: 'Bebas Neue', cursive;
+  background: #ff9933;
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  line-height: 88px;
+  box-shadow: 6px 0px 0px #00E6F6;
+  outline: transparent;
+  position: relative;
+}
+
+button::after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'START';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ff9933;
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+button:hover::after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #8f54a0 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: orange;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+
+</style>
+
+</head>
+
+<center><body>
+
+<img class="logo" src="logo.png" alt="Mechmain">
+
+<h1 style="font-family: Consolas; font-size: 44px">About Us</h1>
+
+
+
+<p style="width: 60%; font-family: Consolas; font-size: 24px">Mechmain provides clients with engineering, simulation, and fabrication services. Our engineers have over 18 years of experience in the industry.</p>
+
+<br>
+
+<p style="width: 60%; font-family: Consolas; font-size: 24px">Mechmain's engineers have all the required experience to fulfill your project needs. <a href="/enquiry" target="_blank" style="color: orange">Make An Enquiry</a></p>
+
+<br>
+<br>
+
+
+<br>
+<br>
+
+
+<br>
+<br>
+
+</body></center>
+
+</html>
